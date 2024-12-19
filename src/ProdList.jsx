@@ -8,73 +8,81 @@ const ProdList = () => {
       id: 1,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 2,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 3,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 4,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 5,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 6,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 7,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     },
     {
-      id: 1,
+      id: 8,
       name: "Iphone",
       imageUrl: prodImage,
-      catgory: "random",
+      category: "random",
       description: "random description",
       price: 199.0
     }
   ];
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+    >
       <h1>Products List:</h1>
       {products.map(product =>
         <ProdItem
           key={product.id}
+          id={product.id}
           name={product.name}
           price={product.price}
           description={product.description}

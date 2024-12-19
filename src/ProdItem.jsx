@@ -1,20 +1,23 @@
+import "./ProdList.css";
+import "./ProdItem.css";
+
 const ProdItem = props => {
   return (
-    <div>
-      <h2>
+    <div className="card-container">
+      <h2 className="card-title">
         Name: {props.name}
       </h2>
-      <img src={props.image} alt={props.name} />
-      <p>
+      <img className="card-image" src={props.image} alt={props.name} />
+      <p className="card-number">
         Item Number: {props.id}
       </p>
-      <h3>
+      <h3 className="card-price">
         Price: {props.price}
       </h3>
-      <p>
+      <p className="card-category">
         Category: {props.category}
       </p>
-      <p>
+      <p className="card-description">
         Description: {props.description}
       </p>
     </div>
